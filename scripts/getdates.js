@@ -1,0 +1,2 @@
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = "Last Modified: " + new Date(document.lastModified).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
