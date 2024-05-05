@@ -25,10 +25,11 @@
 
 
 #temples {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 900px;
     justify-content: center;
     align-items: center;
 }
@@ -38,8 +39,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
     margin: 1%;
+}
+
+#temples img {
+    width: 90%;
+    height: auto;
+}
+
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    #hamburger {
+        display: block;
+    }
+    header nav,
+    header nav a {
+        display: none;
+    }
+
+    header nav a:hover {
+        background-color: transparent !important;
+        text-decoration: underline;
+    }
 }
 
 header {

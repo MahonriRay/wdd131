@@ -1,5 +1,7 @@
 const navLinks = document.querySelectorAll('nav a');
 const sectionHeading = document.querySelector('section h2');
+const hamburger = document.querySelector('#hamburger');
+const nav = document.querySelector('nav');
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = "Last Modified: " + 
@@ -15,4 +17,9 @@ navLinks.forEach(link => {
         // Change the text of the h2 to match the text of the link
         sectionHeading.textContent = this.textContent;
     });
+});
+
+document.querySelector('#hamburger').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('open');
+    this.classList.toggle('open');
 });
