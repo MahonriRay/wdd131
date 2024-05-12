@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mahonri Ray"/>
+    <meta 
+        name="description"
+        content="This project will fulfill the requirements for the W03 assignment."/>
+    <title>Indonesia - WDD131 - Mahonri Ray</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Indonesia</h1>
+    </header>
+    <main>
+        <picture>
+            <!-- <source srcset="images/bali_surf_resized.webp" media="(min-width: 1000px)"> -->
+            <source srcset="images/bali_surf_small_resized.webp" media="(max-width: 600px)">
+            <img src="images/bali_surf_large.webp" alt="Bali, Indonesia">
+        </picture>
+        <div class="locationData">
+            <h2>Data</h2>
+            <h3>Area: <span id="area"></span></h3>
+            <h3>Population: <span id="population"></span></h3>
+            <h3>Language: <span id="language"></span></h3>
+            <h3>Capital: <span id="capital"></span></h3>
+            <h3>Currency: <span id="currency"></span></h3>
+            <h3>Time Zone: <span id="timeZone"></span></h3>
+            <h3>Calling Code: <span id="callingCode"></span></h3>
+            <h3>Internet TLD: <span id="internet"></span></h3>
+        </div>
+        <div class="weatherData">
+            <h2>
+                Weather
+                <img src="images/weather_icon.svg" alt="weather icon" id="weatherIcon">
+            </h2>
+            <h3>Temperature: <span id="temperature"></span></h3>
+            <h3>Conditions: <span id="conditions"></span></h3>
+            <h3>Wind Speed: <span id="windSpeed"></span></h3>
+            <h3>Wind Chill: <span id="windChill"></span></h3>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span id="currentYear"></span>
+            Mahonri Ray &copy; | BYU-Idaho | Computer Science
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
