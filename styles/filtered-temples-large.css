@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Fjalla+One&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #353535;
+    --secondary-color: #D9D9D9;
+    --accent1-color: #284B63;
+    --accent2-color: #3C6E71;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: Abel;
+    --paragraph-font: "Fjalla One", Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #353535;  /* headlines on a white background */ 
+    --headline-color-on-color: #D9D9D9; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #353535; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #D9D9D9; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #284B63;
+    --nav-link-color: #D9D9D9;
+    --nav-background-color: #3C6E71;
+    --nav-hover-link-color: #D9D9D9;
+    --nav-hover-background-color: #353535;
+}
+
+@media screen and (min-width: 891px) {
+    .templesHTML {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-auto-rows: 1fr; /* Add this line */
+        margin: 0 auto;
+        max-width: 1200px;
+        min-width: 900px;
+        justify-content: center;
+        align-items: stretch; /* Add this line */
+    }
+
+    .templesHTML img {
+        width: 90%;
+        height: auto;
+    }
+    
+}
+.templesHTML div {
+    margin: 2%;
+    background-color: rgba(0, 0, 0, 0.1); /* Add this line */
+    border: 1px solid black;
+}
+
+/* #temples figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+} */
+
+
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    #hamburger {
+        display: block;
+    }
+    header nav,
+    header nav a {
+        display: none;
+    }
+
+    header nav a:hover {
+        background-color: transparent !important;
+        text-decoration: underline;
+    }
+}
+
+header {
+    font-family: Helvetica, "Fjalla One", sans-serif;
+    display: flex;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: auto;
+}
+
+header nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 10px;
+    margin: -10px;
+}
+
+header nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    padding: 10px;
+}
+
+body {
+    font-family: Helvetica, "Fjalla One", sans-serif;
+    color: var(--paragraph-color-on-white);
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+main {
+margin: 0 auto;
+}
+
+footer {
+    font-family: Helvetica, "Fjalla One", sans-serif;
+    margin: 0;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    align-items: flex-end;
+}
+
+footer p {
+    padding: 5px;
+    margin: 0;
+}
