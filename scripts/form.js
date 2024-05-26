@@ -26,18 +26,18 @@ const products = [
     }
 ];
 
-const productName = document.querySelector('#product-name');
-const form = document.querySelector('form');
-const reviewCounter = document.querySelector('#reviewCount');
-
-let reviewCounts = localStorage.getItem('reviewCount') || 0;
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = "Last Modified: " + 
-    new Date(document.lastModified).toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' }) + 
-    " " + 
-    new Date(document.lastModified).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+new Date(document.lastModified).toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' }) + 
+" " + 
+new Date(document.lastModified).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
 
+const productName = document.querySelector('#product-name');
+const form = document.querySelector('#form');
+const reviewCounter = document.querySelector('#reviewCount');
+
+let reviewCounts = localStorage.getItem('reviewCount');
 
 if (productName) {
     products.forEach(product => {
