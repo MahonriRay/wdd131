@@ -57,6 +57,6 @@ if (form) {
     });
 }
 
-if (reviewCounts) {
+if (reviewCounter) {
     reviewCounts.innerHTML = `Total reviews submitted: ${reviewCounts}`;
 }
