@@ -37,7 +37,7 @@ const productName = document.querySelector('#product-name');
 const reviewForm = document.querySelector('#form');
 const reviewCounter = document.querySelector('#reviewCount');
 
-let reviewCounts = localStorage.getItem('reviewCount') || 0;
+let reviewCount = localStorage.getItem('reviewCount') || 0;
 
 if (productName) {
     products.forEach(product => {
@@ -52,11 +52,11 @@ if (productName) {
 
 if (reviewForm) {
     reviewForm.addEventListener("submit", () => {    
-        reviewCounts++;
-        localStorage.setItem("reviewCount", reviewCounts);    
+        reviewCount++;
+        localStorage.setItem("reviewCount", reviewCount);    
     });
 }
 
 if (reviewCounter) {
-    reviewCounts.innerHTML = `Total reviews submitted: ${reviewCounts}`;
+    reviewCounter.innerHTML = `Total reviews submitted: ${reviewCount}`;
 }
