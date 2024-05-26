@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Mahonri Ray"/>
+    <meta 
+        name="description"
+        content="This project will fulfill the requirements for the W05 assignment."/>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>Product Review</header>
+    <main>
+        <form action="reveiew.html" id="form" method="get">
+            <label for="product-name">Product Name </label>
+            <select id="product-name" name="product-name" required>
+                <option value disabled selected>Choose a Product...</option>
+                <!-- <option value="product1">Product 1</option>
+                <option value="product2">Product 2</option>
+                <option value="product3">Product 3</option> -->
+                <!-- Add more options as needed -->
+            </select>
+            <div class="rating">
+                <p>Rating </p>
+                <label>★<input type="radio" name="rating" value="1" required></label>
+                <label>★★<input type="radio" name="rating" value="2"></label>
+                <label>★★★<input type="radio" name="rating" value="3"></label>
+                <label>★★★★<input type="radio" name="rating" value="4"></label>
+                <label>★★★★★<input type="radio" name="rating" value="5"></label>
+            </div>
+            <label for="installation-date">Date of Installation:</label>
+            <input type="date" id="installation-date" name="installation-date" required>
+            <div class="features">
+                <p>Which features did you find useful in the product?</p>
+                <p><i>(Check all that apply)</i></p>
+                <label><input type="checkbox" name="features" value="ease-of-use">   Ease of Use</label>
+                <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="design"> Design</label>
+                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+            </div>
+            <label for="review">Written Review <i>(Optional)</i></label>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+            <label for="your-name">Your Name<i> (Optional)</i>:</label>
+            <input type="text" id="your-name" name="your-name">
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            <span id="currentYear"></span>
+            Mahonri Ray &copy; | BYU-Idaho | Computer Science
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
