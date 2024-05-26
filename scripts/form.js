@@ -37,7 +37,7 @@ const productName = document.querySelector('#product-name');
 const form = document.querySelector('#form');
 const reviewCounter = document.querySelector('#reviewCount');
 
-let reviewCounts = localStorage.getItem('reviewCount');
+let reviewCounts = localStorage.getItem('reviewCount') || 0;
 
 if (productName) {
     products.forEach(product => {
