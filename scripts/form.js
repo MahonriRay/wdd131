@@ -30,7 +30,7 @@ const productName = document.querySelector('#product-name');
 const form = document.querySelector('form');
 const reviewCounter = document.querySelector('#reviewCount');
 
-let reviewCount = localStorage.getItem('reviewCount') || 0;
+let reviewCounts = localStorage.getItem('reviewCount') || 0;
 
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = "Last Modified: " + 
@@ -52,11 +52,11 @@ if (productName) {
 
 if (form) {
     formLocator.addEventListener("submit", () => {    
-        reviewCount++;
-        localStorage.setItem("reviewCount", reviewCount);    
+        reviewCounts++;
+        localStorage.setItem("reviewCount", reviewCounts);    
     });
 }
 
-if (reviewCount) {
-    reviewCount.innerHTML = `Total reviews submitted: ${reviewCount}`;
+if (reviewCounts) {
+    reviewCounts.innerHTML = `Total reviews submitted: ${reviewCounts}`;
 }
