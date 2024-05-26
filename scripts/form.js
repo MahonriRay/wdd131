@@ -34,7 +34,7 @@ new Date(document.lastModified).toLocaleDateString('en-US', { year: 'numeric', m
 new Date(document.lastModified).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
 
 const productName = document.querySelector('#product-name');
-const form = document.querySelector('#form');
+const reviewForm = document.querySelector('#form');
 const reviewCounter = document.querySelector('#reviewCount');
 
 let reviewCounts = localStorage.getItem('reviewCount') || 0;
@@ -50,8 +50,8 @@ if (productName) {
 
 }
 
-if (form) {
-    formLocator.addEventListener("submit", () => {    
+if (reviewForm) {
+    reviewForm.addEventListener("submit", () => {    
         reviewCounts++;
         localStorage.setItem("reviewCount", reviewCounts);    
     });
