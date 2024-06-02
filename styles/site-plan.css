@@ -107,8 +107,7 @@ body {
     line-height: 3em;
     text-align: center;
     font-size: 1.2em;
-  }
-  nav  {
+
     font-family: var(--paragraph-font);
     list-style-type: none;
     display: flex;
