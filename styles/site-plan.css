@@ -109,9 +109,10 @@ body {
     font-size: 1.2em;
   }
   nav  {
+    font-family: var(--paragraph-font);
     list-style-type: none;
     display: flex;
-  
+    justify-content: space-around;
   }
   nav a {
     padding:1em;
