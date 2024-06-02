@@ -130,3 +130,69 @@ footer {
     padding-left: 30px;
     padding-top: 30px;
 }
+
+.cardBreakdown #header, .untapMagic #header, .upkeepMagic #header,
+.pcmMagic #header, .combatMagic #header, .postCombatMagic #header,
+.endMagic #header {
+    background-color: var(--secondary-color); /* Adjust this value */
+    color: #000; /* Adjust this value */
+    padding: 3px; /* Adjust this value */
+    display: inline-block;
+    vertical-align:middle;
+    margin-right: 10px; /* Adjust this value */
+}
+.cardBreakdown, .untapMagic, .upkeepMagic, .pcmMagic,
+.combatMagic, .postCombatMagic, .endMagic {
+    background-color: var(--secondary-color); /* Adjust this value */
+    color: #000; /* Adjust this value */
+    padding: 10px; /* Adjust this value */
+    display: inline-block;
+    text-align: left;
+    margin: 3px 45px; /* Adjust this value */
+    width: calc(100% - 110px); /* New */
+}
+
+.cardBreakdown h2 {
+    margin: 0 auto;
+}
+
+#header {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-color);
+    text-shadow: 1px 1px #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.cardBreakdown p, .untapMagic p, .upkeepMagic p, .pcmMagic p,
+.combatMagic p, .postCombatMagic p, .endMagic p{
+    color: var(--headline-color-on-white);
+    text-shadow: 1px 1px #ffffff;
+    padding: 5px;
+}
+
+.cardBreakdown img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+#moreInfoButton {
+    vertical-align: middle;
+    /* Add any specific styles for the button here */
+}
+
+#playHeader {
+    font-size: 2.5em;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-color);
+    text-shadow: 1px 1px #000000;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+#callAction {
+    padding-bottom: 2px;
+}
